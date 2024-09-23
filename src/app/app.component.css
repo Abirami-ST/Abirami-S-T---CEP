@@ -1,0 +1,15 @@
+
+.cols{
+    width: 950px;
+    margin-left: 250px;
+    
+}
+
+.side-bar{ 
+    float:left;
+}
+
+.div{
+    display:flex;
+    flex: 1;
+}

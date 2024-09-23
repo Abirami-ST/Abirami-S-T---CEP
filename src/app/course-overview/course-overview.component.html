@@ -1,0 +1,28 @@
+<div class="main">
+<div *ngFor="let cd of courseDetails">
+    <p class="para_bold">Course Code</p><p>{{cd.CourseCode}}</p>
+    <hr>
+    <p class="para_bold">Course Name</p><p>{{cd.CourseName}}</p>
+    <hr>
+    <p class="para_bold">Course Type</p><p>{{cd.CourseType}}</p>
+    <hr>
+    <p class="para_bold">CoursePeriod</p><p>{{cd.CoursePeriod}}</p>
+    <hr>
+    <div class="para_bold">Credits (4)
+        <p>Lecture - {{cd.Credits.Lecture}}</p>
+        <p>Tutorial - {{cd.Credits.Tutorial}}</p>
+        <p>Practical - {{cd.Credits.Practical}}</p>
+        <p>Project - {{cd.Credits.Project}}</p>
+    </div>
+    <hr>
+    <div class="para_bold">Course Outcomes</div>
+    <div class="arrayContainer" *ngFor="let oc of cd.CourseOutcomes;">
+        {{oc}}
+    </div>  
+    <hr>
+    <div class="para_bold">Mapped Courses</div>
+    <div class="arrayContainer1" *ngFor="let mc of cd.MappedCourses;">
+        {{mc}}
+    </div>   
+</div>
+</div>

@@ -1,0 +1,28 @@
+<h3>Assessment Progress</h3>
+<div class="main">
+    <!--<canvasjs-chart [options]="chartOptions"></canvasjs-chart>-->
+    <!--<google-chart #chart
+        [title]="title"
+        [type]="type"
+        [data]="data"
+        [columns]="columnNames"
+        [options]="options"
+        [width]="width"
+        [height]="height">
+    </google-chart>-->
+<ngx-charts-bar-vertical-2d
+  [view]="view"
+  [scheme]="customColors"
+  [results]="multi"
+  [xAxis]="showXAxis"
+  [yAxis]="showYAxis"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [yScaleMax]="100"
+  [yAxisTickFormatting]="yAxisTickFormatting"
+  [yAxisTicks]="yAxisTicks"
+  [barPadding]="1"
+ >
+</ngx-charts-bar-vertical-2d>
+
+</div>  
